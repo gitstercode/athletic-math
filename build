@@ -3,11 +3,16 @@
 # Create virtual environment for python application
 # All dependencies for the application should be added
 ######
-
-virtualenv venv_athlete
-source venv_athlete/bin/activate
+VIRTUAL_ENV="venv_athlete"
+if [ -d "$VIRTUAL_ENV" ]; then
+	echo "Remove existing virtual environment"
+  	rm -rf "$VIRTUAL_ENV"
+fi
+echo "Creating $VIRTUAL_ENV ....."
+virtualenv "$VIRTUAL_ENV"
+source "$VIRTUAL_ENV"/bin/activate
 pip install tabulate
 echo "Completed setup"
 echo "Executing Application"
-echo "*******************************************"
+echo "           "
 python athlets.py
