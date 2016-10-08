@@ -1,0 +1,13 @@
+#!/bin/bash
+#######
+# Create virtual environment for python application
+# All dependencies for the application should be added
+######
+
+virtualenv venv_athlete
+source venv_athlete/bin/activate
+pip install tabulate
+echo "Completed setup"
+echo "Executing Application"
+echo "*******************************************"
+python athlets.py
