@@ -9,6 +9,8 @@ Make sure to have the build file and athlete.py in the same directory.
 
 Execute with the below command:
 
-./build
+`chmod 777 build`
+
+`./build`
 
 This application uses python module "tabulate" to construct the table
