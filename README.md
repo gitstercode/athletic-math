@@ -1,7 +1,7 @@
 # athletic-math
 Python pragram that receives user input, the name of the athlete and their timings. Find Min Max Avg.
 
-###Instructions:
+### Instructions:
 
 Execute build file to create the required virtualenv and execute the application.
 
